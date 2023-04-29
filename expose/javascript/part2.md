@@ -22,10 +22,18 @@
 
 11. The function will return `[50, 100, 150]`. This is because `discounted` was assigned to an array in the same block of code in which it was returned, and the variable was not reassigned. Although the array itself changed, `discounted` was not reassigned to a different array in memory, so the variable did not change, and no errors occur.
 
-12. A. `student.name`
-    B. `student.['Grad Year'];`
-    C. `student.greeting()`
-    D. `student['Favorite Teacher'].name`
+12. A. `student.name` \ 
+    B. `student.['Grad Year'];` \ 
+    C. `student.greeting()` \ 
+    D. `student['Favorite Teacher'].name` \ 
     E. `student.courseLoad[0]`
 
-13. 
+13. A. `'3' + 2` outputs to 32. This is because the `2` will convert to a String and concatenate with the string `'3'`. \ 
+    B. `'3' - 2` ouputs to 1. This is because `-` is a mathematical function, so `'3'` will convert to an integer, and 3-2 = 1. \ 
+    C. `3 + null` outputs 3. `3` is a number, and in numeric conversion, `null` is 0, and 3 + 0 = 3. \ 
+    D. `'3' + null` outputs `'3null'`. Concatentation of a string with `null` starts with `null` converting into `'null'`, followed by normal concatentation rules between two strings. \ 
+    E. `true + 3` outputs 4. `true`, as a keyword for booleans, is 1 in arithmetic, so 1 + 3 = 4. \ 
+    F. `false + null` outputs `0`. In arithmetic, `false` is 0, and `null` is 0, and 0 + 0 = 0. \ 
+    G. `'3' + undefined` outputs `3undefined`. Javascript converts `undefined` into the string `'undefined'` because it is being added to another string, and the `+` concatenates the two strings. \ 
+    H. `'3' - undefined` outputs `NaN`. Subtraction is treated as arithmetic, so `'3'` converts to 3, and `undefined` converts to NaN. 3 - NaN is NaN, or Not a Number.
+14. 
