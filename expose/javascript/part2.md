@@ -38,12 +38,16 @@
     6.  F. `false + null` outputs `0`. In arithmetic, `false` is 0, and `null` is 0, and 0 + 0 = 0.
     7.  G. `'3' + undefined` outputs `3undefined`. Javascript converts `undefined` into the string `'undefined'` because it is being added to another string, and the `+` concatenates the two strings. 
     8.  H. `'3' - undefined` outputs `NaN`. Subtraction is treated as arithmetic, so `'3'` converts to 3, and `undefined` converts to NaN. 3 - NaN is NaN, or Not a Number.
-14. Comparison
+
+14. Comparison:
     1.  A. `'2' > 1` evaulates to `true`. This is because `'2'` converts to the integer 2, and then is compared to the integer 1.
     2.  B. `'2' < '12'` evaulates to `false`. In this boolean expression, since both values being compared are strings, there is no type conversion, and they are being compared as if they are strings rather than integers. The strings are compared character by character, starting with the first character. Here '2' is greater than '1', so the boolean expression evaluates to false.
     3.   C. `2 == '2'` evaluates to `true`. In this expression, `'2'`, which is a string, is converted into the integer 2. 2 equals 2, so this is true.
     4.   D. `2 === '2'` evaulates to `false`. `===` is a strict equality operator, so it will check without type conversion. Since `2` (integer) and `'2'` (string) are not of the same type, the output is false.
     5.   E. `true == 2` evaluates to `false`. When compared with a number, `true` is treated as the number 1. 1 is not equal to 2, so this evaluates to false.
     6.   F. `true === Boolean(2)` evaluates to `true`. This is because the function `Boolean(2)` is a "true" value, and so `true` has the same type as a "true" value. 
+    
 15. `==` is a regular equality operator that will convert types to compare equality. Other the other hand, `===` will not convert types and is a strict equality operator. If the two values being compared using the `===` operator are not even of the same type, the expression will evaluate to false.
-16. 
+
+16. The answer is in `part2-question16.js`
+17. 
