@@ -56,6 +56,7 @@
 18. The answer is in `part2-question18.js`
 
 19. The output will be:
+    
 > 1
 > 4
 > 3
