@@ -50,4 +50,13 @@
 15. `==` is a regular equality operator that will convert types to compare equality. Other the other hand, `===` will not convert types and is a strict equality operator. If the two values being compared using the `===` operator are not even of the same type, the expression will evaluate to false.
 
 16. The answer is in `part2-question16.js`
-17. 
+
+17. The result from `modifyArray([1, 2, 3], doSomething)` is an array returned with the values `[2, 4, 6]`. In this program, `modifyArray` is called with the first parameter being an array. The second parameter is a function, which, in the loop inside `modifyArray`, will be called, taking in a value from the array that was the first parameter. In this specific case, `doSomething` is the second argument that is called back to, and `doSomething` returns 2 times the parameter of it. This entire program results in returning an array that has 2 times every value from the array that was passed into `modifyArray` on line 13.
+
+18. The answer is in `part2-question18.js`
+
+19. The output will be:
+> 1
+> 4
+> 3
+> 2
