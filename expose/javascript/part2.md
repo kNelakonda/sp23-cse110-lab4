@@ -56,8 +56,8 @@
 18. The answer is in `part2-question18.js`
 
 19. The output will be:
-    
-> 1 \n
-> 4 \n
-> 3 \n
+(each number is on a new line)
+> 1 
+> 4 
+> 3 
 > 2
